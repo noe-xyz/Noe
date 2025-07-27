@@ -27,3 +27,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
+Icon by: <a href="https://www.flaticon.com/free-icons/sparkle" title="sparkle icons">Sparkle icons created by kornkun - Flaticon</a>
