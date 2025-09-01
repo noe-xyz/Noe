@@ -1,35 +1,30 @@
-@import './base.css';
+@import "tailwindcss";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+body {
+  background-color: #1A6ECE;
+  font-family: 'Instrument Serif', serif;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.text-general {
+    color: #1A6ECE;
+    background-color: white
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.text-principal {
+    color: white;
+    background-color: #1A6ECE;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+#welcome {
+    font-size: 228px;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+#welcomeSubtitle {
+    font-size: 128px;
+    line-height: 150px;
+} 
+
+.links {
+    font-size: 40px;
+    color: white;
 }
