@@ -1,20 +1,57 @@
+/* Tailwind import */
 @import "tailwindcss";
 
+/* Fuente y color que se usa en todas las páginas menos la de inicio */
 body {
-  background-color: #1A6ECE;
+  background-color: white;
   font-family: 'Instrument Serif', serif;
+  color: #1A6ECE;
 }
 
-.text-general {
-    color: #1A6ECE;
-    background-color: white
+/* Header */
+.links {
+    font-size: 40px;
 }
 
-.text-principal {
-    color: white;
-    background-color: #1A6ECE;
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
 }
 
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.25s ease-out;
+}
+
+/* Subrayado general */
+.hover-underline-animation::after {
+  background-color: #1A6ECE;
+}
+
+/* Subrayado pág. inicio */
+.white-links .hover-underline-animation::after {
+  background-color: white;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.hover-underline-animation.left::after {
+  transform-origin: bottom right;
+}
+
+.hover-underline-animation.left:hover::after {
+  transform-origin: bottom left;
+}
+
+/* Página de inicio */
 #welcome {
     font-size: 228px;
 }
@@ -22,9 +59,31 @@ body {
 #welcomeSubtitle {
     font-size: 128px;
     line-height: 150px;
-} 
+}
 
-.links {
-    font-size: 40px;
-    color: white;
+/* Títulos */
+#title {
+    font-size: 96px;
+}
+
+/* Página de proyectos */
+.project-title {
+    font-size: 48px;
+}
+
+.project-description {
+    font-size: 18px;
+    font-family: 'IBM Plex Mono', monospace;
+    max-width: 500px;
+}
+
+.project-subtitle {
+    font-size: 23px;
+}
+
+.project-image {
+    margin-left: 90px;
+    max-width: 500px;
+    max-height: 500px;
+    border: #1A6ECE 2px solid;
 }
