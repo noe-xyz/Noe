@@ -35,7 +35,7 @@
 
             <!-- Menú -->
             <nav class="hidden md:flex space-x-20 links">
-                <a href="#experiencia" :title="$t('header.experience')" class="hover-underline-animation left">{{ $t('header.experience') }}</a>
+                <a :href="'/' + $i18n.locale + '/experience'" class="hover-underline-animation left">{{ $t('header.experience') }}</a>
                 <a :href="'/' + $i18n.locale + '/projects'" :title="$t('header.projects')" class="hover-underline-animation left">{{ $t('header.projects') }}</a>
                 <a href="#contacto" :title="$t('header.contact')" class="hover-underline-animation left">{{ $t('header.contact') }}</a>
             </nav>
