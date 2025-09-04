@@ -1,6 +1,6 @@
 # Mi portfolio
-Iconos de [text](https://www.svgrepo.com/), Font awesome
+Iconos de [SvgRepo](https://www.svgrepo.com/), [Font awesome](https://fontawesome.com/)
 
 Tecnologías usadas:
--> Vue
--> TailwindCSS
+- Vue
+- TailwindCSS
