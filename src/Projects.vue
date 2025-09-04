@@ -17,10 +17,10 @@
 
             <!-- Imagen con overlay -->
             <!-- <div class="flex-shrink-0 relative group rounded-2xl overflow-hidden"> -->
-              
+
               <!-- Imagen -->
               <img :src="project.image" :alt="project.title"
-                class="object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105 project-image" />
+                class="object-cover rounded-[35px] transition-transform duration-300 group-hover:scale-105 project-image" />
 
               <!-- Capa traslúcida -->
               <!-- <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 
