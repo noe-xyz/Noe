@@ -87,3 +87,22 @@ body {
     max-height: 500px;
     border: #1A6ECE 2px solid;
 }
+
+/* Página de experiencia */
+.title {
+    font-size: 64px;
+}
+
+.techs {
+    font-size: 32px;
+}
+
+em.techs {
+    font-size: 32px;
+    color: #8C8C8C
+}
+
+/* Footer */
+#footer {
+    font-size: 20px;
+}

@@ -9,7 +9,7 @@
     <Title />
 
     <!-- Main -->
-    <section class="min-h-screen flex justify-center items-start mt-4">
+    <section class="flex justify-center items-start mt-4 mb-12">
       <main class="space-y-12">
         <template v-for="(project, index) in projects" :key="index">
 
@@ -52,6 +52,9 @@
       </main>
     </section>
 
+    <!-- Footer -->
+    <Footer />
+
 
   </div>
 
@@ -60,11 +63,12 @@
 <script>
 import Header from './components/Header.vue'
 import Title from './components/Title.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'Projects',
   components: {
-    Header, Title
+    Header, Title, Footer
   },
   computed: {
     projects() {
